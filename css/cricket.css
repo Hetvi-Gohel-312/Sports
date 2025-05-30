@@ -1,0 +1,444 @@
+/* Leather Ball Cricket Benefits Section */
+
+.leather-ball-benefits {
+  background-color: var(--gray-50);
+  border-radius: var(--radius-md);
+  padding: 4rem 2rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 1500px;
+  margin: 0 auto; /* centers the section */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--luxury-navy);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: var(--luxury-gold);
+  display: block;
+  margin: 0.75rem auto 0;
+  border-radius: var(--radius-sm);
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background-color: #fff;
+  border-left: 6px solid var(--luxury-gold);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-card h3 {
+  color: var(--luxury-navy);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+  color: var(--text-gray);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+  /* General Table Styling */
+  .cost-comparison {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+    max-width: 1500px;
+}
+
+.cost-comparison h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.cost-comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 17px;
+    text-align: center;
+    background: linear-gradient(to right, #ecf0f1, #ffffff);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cost-comparison th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 14px 20px;
+    font-weight: bold;
+}
+
+.cost-comparison td {
+    padding: 14px 20px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.cost-comparison tr:nth-child(even) td {
+    background-color: #eef3f7;
+}
+
+.cost-comparison td:hover {
+    background-color: #d6eaf8;
+}
+@media (max-width: 768px) {
+  .cost-comparison table {
+    font-size: 13px;
+  }
+
+  .cost-comparison th, 
+  .cost-comparison td {
+    padding: 10px;
+    word-wrap: break-word;
+  }
+
+  .cost-comparison table {
+    table-layout: fixed;
+  }
+
+  .cost-comparison th:nth-child(1),
+  .cost-comparison td:nth-child(1) {
+    width: 35%;
+  }
+
+  .cost-comparison th:nth-child(2),
+  .cost-comparison td:nth-child(2),
+  .cost-comparison th:nth-child(3),
+  .cost-comparison td:nth-child(3) {
+    width: 32.5%;
+  }
+}
+
+/* Conclusion Section */
+.conclusion {
+    background: #f0f7ff;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1500px;
+    border-left: 6px solid #2980b9;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.conclusion h2 {
+    font-size: 26px;
+    color: #21618c;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.conclusion p {
+    font-size: 18px;
+    color: #34495e;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/*==================== LUX PRODUCT SECTION ====================*/
+.installation,
+.standard-pitch-section {
+  background: linear-gradient(145deg, #fdfdfd, #f5f5f5);
+  padding: 60px 40px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+  max-width: 1500px;
+  overflow: hidden;
+}
+
+.installation,
+.pitch-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  text-align: justify;
+}
+
+.turf-content,
+.pitch-content {
+  padding: 20px;
+}
+
+.turf-content h3,
+.pitch-content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0e2b5c;
+  margin-bottom: 15px;
+}
+
+.turf-content h4,
+.pitch-content h4 {
+  font-size: 1.3rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.turf-content p,
+.pitch-content p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+.benefits-list,
+.pitch-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-list li,
+.pitch-content ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 14px;
+  color: #333;
+  font-size: 1rem;
+}
+
+.benefits-list li::before,
+.pitch-content ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00a86b;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.turf-image img,
+.pitch-img img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s ease;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.turf-image img:hover,
+.pitch-img img:hover {
+  transform: scale(1.025);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/*==================== RESPONSIVE DESIGN ====================*/
+@media (max-width: 992px) {
+  .installation,
+  .pitch-grid {
+    grid-template-columns: 1fr;
+    text-align: justify;
+  }
+
+  .turf-content,
+  .pitch-content {
+    padding: 0;
+  }
+
+  .turf-image,
+  .pitch-img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .installation,
+  .standard-pitch-section {
+    padding: 30px 20px;
+  }
+
+  .turf-content h3,
+  .pitch-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .turf-content h4,
+  .pitch-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .benefits-list li,
+  .pitch-content ul li {
+    font-size: 0.95rem;
+  }
+}
+
+/* SECTION WRAPPER */
+.product-grid-section {
+  max-width: 1500px;
+  margin: 0 auto;
+     padding-top: 1rem; /* Reduced top padding */
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+}
+
+/* SECTION HEADER */
+.product-grid-section .text-center {
+  text-align: center;
+  margin-bottom: 3rem; /* Reduced margin for tighter spacing */
+}
+
+.product-grid-section .gold-label {
+  display: inline-block;
+  background: var(--luxury-gold);
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.product-grid-section .section-heading {
+  font-size: 2.5rem;
+  color: var(--luxury-navy);
+  margin-bottom: 1rem;
+}
+
+/* GRID LAYOUT */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* Automatic adjustment for smaller screens */
+  gap: 2rem; /* Reduced gap for compactness */
+}
+
+/* EACH PRODUCT CARD */
+.product-card {
+  background-color: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* IMAGE */
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.product-card-content {
+  padding: 1.5rem; /* Reduced padding for more compact look */
+}
+
+.product-card-content h3 {
+  font-size: 1.5rem;
+  color: var(--luxury-navy);
+  margin-bottom: 1rem;
+}
+
+.product-card-content p {
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.product-card-content h4 {
+  font-size: 1.1rem;
+  color: var(--luxury-gold);
+  margin-bottom: 0.75rem;
+}
+
+/* CHECK LIST */
+.check-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.check-item {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.check-item::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--luxury-gold);
+  font-weight: bold;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Adjust section padding for smaller screens */
+  .product-grid-section {
+    padding: 0rem 1rem 1rem 1rem; /* Reduced top padding to 0.5rem */
+  }
+
+  /* Make the grid layout more compact on mobile */
+  .product-grid {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    gap: 1rem; /* Reduce gap on mobile */
+  }
+
+  /* Adjust product card padding */
+  .product-card-content {
+    padding: 1rem;
+  }
+
+  /* Adjust text size for smaller screens */
+  .product-card-content h3 {
+    font-size: 1.25rem; /* Smaller heading on mobile */
+  }
+
+  .product-card-content p {
+    font-size: 0.9rem; /* Smaller text for better readability on mobile */
+    text-align: justify;
+  }
+
+  .product-card-content h4 {
+    font-size: 1rem;
+  }
+
+  /* Make check-list items more compact */
+  .check-item {
+    font-size: 0.9rem;
+  }
+}

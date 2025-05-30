@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi Sports Flooring</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+.luxury-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-banner {
+  position: relative;
+  height: 40vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(26, 35, 66, 0.7), rgba(26, 35, 66, 0.7)),
+              url('https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+}
+
+.page-banner-content {
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.page-banner-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.page-banner-line {
+  width: 6rem;
+  height: 4px;
+  background-color: #D4AF37;
+  margin: 1rem auto 0;
+}
+
+.gold-text {
+  color: #D4AF37;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li::before {
+  content: "✔";
+  margin-right: 8px;
+  color: #D4AF37;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.image-frame {
+  position: relative;
+}
+
+.border-top-left, .border-bottom-right {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border: 4px solid #D4AF37;
+  z-index: 0;
+}
+
+.border-top-left {
+  top: -1rem;
+  left: -1rem;
+  border-bottom: none;
+  border-right: none;
+}
+
+.border-bottom-right {
+  bottom: -1rem;
+  right: -1rem;
+  border-top: none;
+  border-left: none;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.flooring-types {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.flooring-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.flooring-type:nth-child(even) {
+  direction: rtl;
+}
+
+.flooring-type:nth-child(even) .flooring-text {
+  direction: ltr;
+}
+
+.flooring-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.5s;
+}
+
+.flooring-image img:hover {
+  transform: scale(1.05);
+}
+
+.sports-support {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  margin-bottom: 5rem;
+}
+
+.sports-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.sports-list div {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+  </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap">
+<!-- Logo Icon -->
+<link rel="icon" href="../../images/logo1.png" type="image/gif" >
+
+<!-- Bootstrap Core CSS -->
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="container">
+        <div class="navbar-content">
+            <a href="index.htm" class="logo">
+                <span>AH <span class="gold-text">Sports</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+              <a href="index.htm">Home</a>
+              <a href="badminton-court.html">Badminton Court</a>
+              <a href="cricket_pitch.htm">Cricket Pitch</a>
+              <a href="football-turf.html">Football Turf</a>
+              <a href="multiplay_systems.htm">Multiplay System</a>
+              <a href="gym-flooring.html">Gym Flooring</a>
+              <a href="outdoor_fitness.htm">Outdoor Fitness </a>
+              <a href="playground_equipments.htm">Playground Equipment</a>
+              <a href="sports_flooring.htm"> Sports Flooring</a>
+              <a href="contact.html">Contact</a>
+          </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="menuBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+          <a href="index.htm">Home</a>
+          <a href="badminton-court.html">Badminton Court</a>
+          <a href="cricket_pitch.htm">Cricket Pitch</a>
+          <a href="football-turf.html">Football Turf</a>
+          <a href="multiplay_systems.htm">Multiplay System</a>
+          <a href="gym-flooring.html">Gym Flooring</a>
+          <a href="outdoor_fitness.htm">Outdoor Fitness </a>
+          <a href="playground_equipments.htm">Playground Equipment</a>
+          <a href="sports_flooring.htm"> Sports Flooring</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-list">
+            <div class="breadcrumb-item">
+                <a href="index.htm" class="breadcrumb-link">Home</a>
+            </div>
+            <div class="breadcrumb-item">
+                <span class="breadcrumb-current">Multi Sports Flooring</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Page Banner -->
+<div class="page-banner">
+<div class="page-banner-bg" style="background-image: linear-gradient(rgba(26, 35, 66, 0.7), rgba(26, 35, 66, 0.7)), url(https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1920&q=80)"></div>
+<div class="page-banner-content">
+    <h1 class="animate-fade-up">Multi Sports Flooring</h1>
+    <div class="page-banner-line"></div>
+</div>
+</div>
+
+  <!-- Main Content -->
+  <section class="luxury-container">
+
+    <div class="two-columns">
+      <div>
+        <span class="gold-text uppercase">Versatile Solutions</span>
+        <h2 class="section-heading">Premium Multi Sports Flooring</h2>
+        <p class="description">
+          Our multi sports flooring systems are designed to accommodate a wide range of sporting activities within a single surface, making them ideal for facilities that host diverse programs and events.
+        </p>
+        <p class="description">
+          Each system is engineered to deliver consistent performance across multiple sports while maintaining optimal safety, comfort, and durability for years of intensive use.
+        </p>
+        <ul class="checklist">
+          <li>Versatile surfaces for multiple sports</li>
+          <li>Customizable court markings</li>
+          <li>Professional installation services</li>
+          <li>Maintenance and resurfacing programs</li>
+        </ul>
+      </div>
+
+      <div class="image-frame">
+        <div class="border-top-left"></div>
+        <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=800&q=80" alt="Multi sports flooring facility" class="main-image">
+        <div class="border-bottom-right"></div>
+      </div>
+    </div>
+
+    <!-- Options Section -->
+    <div class="text-center mb-48">
+        <span class="gold-label">Options</span>
+        <h2 class="section-heading centered">Types of  Multi Sports Flooring</h2>
+    </h2>
+        <p class="text-center max-width-md">
+            We offer a variety of multi sports flooring solutions to suit different facility requirements, usage patterns, and budget considerations.
+        </p>
+    </div>
+
+
+    <!-- Flooring Types dynamically loaded -->
+    <div id="flooring-types" class="flooring-types"></div>
+
+    <!-- Supported Sports -->
+    <div class="sports-support">
+      <h3 class="font-serif heading">Supported Sports and Activities</h3>
+      <p class="description">
+        Our multi sports flooring systems are designed to support a wide range of sports and activities, providing the right balance of shock absorption, ball bounce, slide control, and traction for each.
+      </p>
+      <div id="sports-list" class="sports-list"></div>
+    </div>
+
+
+
+  </section>
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+        <h2>Ready to Transform Your Space?</h2>
+        <p>Our team of experts is ready to help you select the perfect flooring and equipment solutions that meet your specific needs and budget.</p>
+        <a href="contact.html" class="luxury-button">Get a Free Quote Today</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Company Info -->
+            <div>
+                <h3>AH <span class="gold-text">Sports</span></h3>
+                <p class="footer-desc">
+                    Premium sports flooring and equipment distributor providing high-quality solutions for various sporting needs.
+                </p>
+                <div class="social-icons">
+                    <a href="https://instagram.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://facebook.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://twitter.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="gym-flooring.html">Gym Flooring</a></li>
+                    <li><a href="outdoor-fitness.html">Outdoor Fitness</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div>
+                <h4>Our Products</h4>
+                <ul class="footer-links">
+                    <li><a href="badminton-court.html">Badminton Court</a></li>
+                    <li><a href="football-turf.html">Football Turf</a></li>
+                    <li><a href="playground-equipment.html">Playground Equipment</a></li>
+                    <li><a href="cricket-pitch.html">Cricket Pitch Flooring</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <!-- Contact -->
+<div>
+<h4>Contact Us</h4>
+<div class="contact-info">
+
+  <!-- Bangalore -->
+  <div class="contact-item">
+    <div>
+      <strong>Bangalore:</strong><br />
+      Hennur, Kalyan Nagar, 560043<br />
+      <a href="tel:+91-9513134663" class="contact-link">
+        <i class="fa fa-phone gold-icon" style="color:red"></i> 9513134663
+      </a>
+      <a href="https://wa.me/9513134663/?text=Can%20you%20share%20more%20details" class="contact-link">
+        <i class="fa fa-whatsapp gold-icon" style="color:green"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Coimbatore -->
+  <div class="contact-item">
+    <div>
+      <strong>Coimbatore:</strong><br />
+      New Siddhapudur<br />
+      <a href="tel:+91-6380655921" class="contact-link">
+        <i class="fa fa-phone gold-icon" style="color:red"></i> 6380655921
+      </a>
+      <a href="https://wa.me/6380655921/?text=Can%20you%20share%20more%20details" class="contact-link">
+        <i class="fa fa-whatsapp gold-icon" style="color:green"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Chennai -->
+  <div class="contact-item">
+    <div>
+      <strong>Chennai:</strong><br />
+      Adayar, Chennai 600020<br />
+      <a href="tel:+91-6380655921" class="contact-link">
+        <i class="fa fa-phone gold-icon" style="color:red"></i> 6380655921
+      </a>
+      <a href="https://wa.me/6380655921/?text=Can%20you%20share%20more%20details" class="contact-link">
+        <i class="fa fa-whatsapp gold-icon" style="color:green"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- Hover CSS -->
+<style>
+.contact-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.contact-link:hover {
+  transform: scale(1.1);
+  color: gold;
+}
+</style>
+
+        </div>
+
+    </div>
+</footer>
+  <script >
+    const flooringTypes = [
+  {
+    name: "Tennis Sports Flooring",
+    description: "Specialized flooring designed to provide optimal ball bounce, player comfort, and durability for tennis courts.",
+    applications: ["Tennis courts", "Sports complexes", "Recreational clubs"],
+    features: [
+      "Excellent ball response",
+      "UV resistant surface",
+      "Slip-resistant texture",
+      "High shock absorption",
+      "Durable for heavy usage"
+    ],
+    image: "sports_images/tennis.webp"
+  },
+  {
+    name: "Basketball Sports Flooring",
+    description: "High-performance flooring system built for professional and recreational basketball courts, ensuring safety and agility.",
+    applications: ["Basketball courts", "Indoor arenas", "Sports academies"],
+    features: [
+      "Superior grip and traction",
+      "Shock-absorbing surface",
+      "Fade and scuff resistant",
+      "Consistent ball bounce",
+      "Long-lasting durability"
+    ],
+    image: "sports_images/basketball.webp"
+  },
+  {
+    name: "Table Tennis Sports Flooring",
+    description: "Specialized flooring designed for optimal movement and minimal injury risk during table tennis matches.",
+    applications: ["Table tennis clubs", "Indoor recreational spaces", "Sports training centers"],
+    features: [
+      "Anti-slip surface",
+      "Quick foot movement support",
+      "Shock absorption",
+      "Wear and scratch resistance",
+      "Professional tournament quality"
+    ],
+    image: "sports_images/table.webp"
+  },
+  {
+    name: "Synthetic Sports Flooring",
+    description: "Versatile, all-weather synthetic flooring solutions suitable for multiple sports activities and venues.",
+    applications: ["Outdoor courts", "School grounds", "Community parks"],
+    features: [
+      "Weather-resistant material",
+      "Low maintenance",
+      "Multi-sport usability",
+      "Shock absorbing",
+      "UV protection"
+    ],
+    image: "sports_images/synthetic.webp"
+  },
+  {
+    name: "BasketBall Vinyl Sports Flooring",
+    description: "Vinyl flooring designed for basketball courts offering enhanced grip, comfort, and durability.",
+    applications: ["Indoor basketball courts", "Multipurpose gymnasiums", "School sports halls"],
+    features: [
+      "High slip resistance",
+      "Shock absorption",
+      "Durable vinyl surface",
+      "Easy to clean",
+      "Cost-effective solution"
+    ],
+    image: "sports_images/vinyl.webp"
+  },
+  {
+    name: "Gym Sports Flooring",
+    description: "Durable and cushioned flooring built to support intense physical activities in gym environments.",
+    applications: ["Fitness centers", "Home gyms", "Commercial gyms"],
+    features: [
+      "Impact-resistant surface",
+      "Anti-slip texture",
+      "Noise reduction",
+      "Easy maintenance",
+      "Heavy equipment support"
+    ],
+    image: "sports_images/ForInstalledProd1.webp"
+  },
+  {
+    name: "Wooden Sports Flooring",
+    description: "Classic hardwood sports flooring offering a premium playing surface for indoor sports facilities.",
+    applications: ["Basketball courts", "Badminton courts", "Indoor sports halls"],
+    features: [
+      "Natural shock absorption",
+      "Consistent ball bounce",
+      "Elegant appearance",
+      "Durable hardwood material",
+      "Professional-grade finish"
+    ],
+    image: "sports_images/Installation-3.-Villeneuve-1024x682.webp"
+  },
+  {
+    name: "Indoor Hockey Sports Flooring",
+    description: "Specialized flooring engineered to meet the needs of fast-paced indoor hockey games.",
+    applications: ["Indoor hockey arenas", "Multipurpose sports halls", "Training facilities"],
+    features: [
+      "High-speed surface",
+      "Smooth puck glide",
+      "Durable under heavy play",
+      "Shock absorbing",
+      "Anti-slip properties"
+    ],
+    image: "sports_images/idrottshuset_P0046865p.webp"
+  },
+  {
+    name: "Badminton Sports Flooring",
+    description: "Performance-focused flooring providing great traction and comfort for badminton players.",
+    applications: ["Badminton courts", "Sports academies", "Indoor sports facilities"],
+    features: [
+      "Anti-slip surface",
+      "Shock absorption",
+      "Wear resistance",
+      "Professional playing experience",
+      "Easy installation"
+    ],
+    image: "sports_images/RIMG2160.webp"
+  },
+  {
+    name: "MultiPurpose Sports Flooring",
+    description: "Versatile sports flooring system catering to a wide range of indoor and outdoor sports activities.",
+    applications: ["Community centers", "School gymnasiums", "Multipurpose courts"],
+    features: [
+      "Multi-sport compatibility",
+      "Weatherproof design",
+      "Shock absorption",
+      "Durable and low maintenance",
+      "Easy customization"
+    ],
+    image: "sports_images/DSCN0079.webp"
+  },
+  {
+    "name": "VolleyBall Sports Flooring",
+    "description": "Durable flooring designed for volleyball courts, offering superior grip and shock absorption for fast-paced movements.",
+    "applications": ["Volleyball courts", "Sports complexes", "Recreational centers"],
+    "features": [
+      "Shock-absorbent",
+      "Non-slip surface",
+      "Durable and resilient",
+      "Easy to maintain",
+      "Ideal for indoor sports"
+    ],
+    "image": "sports_images/IMG_0787.webp"
+},
+  {
+    "name": "Gymnasium Sports Flooring",
+    "description": "Specialized flooring for gymnasiums, providing a resilient, safe, and smooth surface for various sports and physical activities.",
+    "applications": ["Gymnasiums", "Fitness centers", "Multi-purpose halls"],
+    "features": [
+      "Durable and long-lasting",
+      "Shock absorbent",
+      "Anti-slip properties",
+      "Low maintenance",
+      "Comfortable underfoot"
+    ],
+    "image": "sports_images/WB_StFX-033a.webp"
+  },
+  {
+    "name": "Indoor Multipurpose Sports Flooring",
+    "description": "Versatile flooring that supports various sports and activities, designed to provide a consistent, safe surface for multiple uses.",
+    "applications": ["Multi-purpose sports courts", "Recreational areas", "Schools and gyms"],
+    "features": [
+      "Durable and resilient",
+      "Shock absorption",
+      "Non-slip surface",
+      "Easy to install",
+      "Low maintenance"
+    ],
+    "image": "sports_images/Picture3.webp"
+  },
+  {
+    "name": "Children's Playground Sports Flooring",
+    "description": "Safety-focused flooring designed for playgrounds, ensuring comfort, support, and protection for children during outdoor play.",
+    "applications": ["Playgrounds", "Recreational parks", "Schools"],
+    "features": [
+      "Shock absorbent",
+      "Non-toxic materials",
+      "Durable in various weather conditions",
+      "Slip-resistant",
+      "Safe for children"
+    ],
+    "image": "sports_images/Revius_Lyceum_45.webp"
+  },
+  {
+    "name": "Indoor Hockey Sports Flooring",
+    "description": "Specially designed flooring for indoor hockey, offering a smooth surface with excellent ball control and durability under high-impact play.",
+    "applications": ["Indoor hockey rinks", "Sports halls", "Recreational centers"],
+    "features": [
+      "Low friction",
+      "Durable",
+      "Resistant to wear and tear",
+      "Shock absorbent",
+      "Easy to clean"
+    ],
+    "image": "sports_images/images (7).webp"
+  },
+  {
+    "name": "Artificial Grass",
+    "description": "Low-maintenance artificial grass that offers the aesthetic of natural grass with the durability to withstand all weather conditions.",
+    "applications": ["Lawns", "Playgrounds", "Sports fields", "Landscaping"],
+    "features": [
+      "Durable and long-lasting",
+      "Weather-resistant",
+      "Easy installation",
+      "Low maintenance",
+      "Eco-friendly"
+    ],
+    "image": "sports_images/kir1.webp"
+  },
+  {
+    "name": "Mosquito Net & Insect Screens",
+    "description": "High-quality mosquito nets and insect screens designed to provide a barrier against insects while allowing fresh air and light to pass through.",
+    "applications": ["Homes", "Hotels", "Offices", "Recreational areas"],
+    "features": [
+      "Breathable and durable",
+      "Protects against insects",
+      "Easy installation",
+      "UV resistant",
+      "Waterproof"
+    ],
+    "image": "sports_images/pleaded_insect_screen4.webp"
+  },
+  {
+    "name": "Wall Coverings",
+    "description": "Decorative and functional wall coverings that enhance the appearance of spaces while providing protection and durability.",
+    "applications": ["Homes", "Offices", "Commercial buildings", "Hotels"],
+    "features": [
+      "Variety of designs",
+      "Easy to install",
+      "Durable and long-lasting",
+      "Protects walls from damage",
+      "Low maintenance"
+    ],
+    "image": "sports_images/wall_murals1.webp"
+  },
+  {
+    "name": "Carpets, Vinyl & Wooden Flooring",
+    "description": "High-quality carpets that add comfort and style to any space while offering durability and ease of maintenance.",
+    "applications": ["Homes", "Offices", "Hotels", "Commercial spaces"],
+    "features": [
+      "Comfortable and soft",
+      "Long-lasting",
+      "Easy to clean",
+      "Variety of textures and colors",
+      "Noise-reducing properties"
+    ],
+    "image": "sports_images/kronoswiss_flooring.webp"
+  },
+  {
+    "name": "Vinyl & Wooden Flooring",
+    "description": "A range of vinyl and wooden flooring options, combining the natural look of wood with the durability and low maintenance of vinyl.",
+    "applications": ["Homes", "Offices", "Commercial spaces", "Retail outlets"],
+    "features": [
+      "Variety of finishes",
+      "Durable and scratch-resistant",
+      "Easy to maintain",
+      "Eco-friendly options",
+      "Quick installation"
+    ],
+    "image": "sports_images/kronoswiss_flooring.webp"
+  },
+  {
+    "name": "Glass Film",
+    "description": "Protective and decorative glass films that offer privacy, UV protection, and aesthetic appeal to windows and glass surfaces.",
+    "applications": ["Windows", "Office buildings", "Homes", "Shops"],
+    "features": [
+      "UV protection",
+      "Privacy enhancement",
+      "Durable and scratch-resistant",
+      "Easy to apply",
+      "Customizable designs"
+    ],
+    "image": "sports_images/digitalprinting.webp"
+  },
+  {
+    "name": "Sports Flooring",
+    "description": "Flooring designed for various sports and activities, offering high performance, safety, and durability.",
+    "applications": ["Multi-purpose sports courts", "Indoor arenas", "Gymnasiums"],
+    "features": [
+      "High-performance surface",
+      "Durable and shock-absorbent",
+      "Non-slip finish",
+      "Easy to clean",
+      "Suitable for multiple sports"
+    ],
+    "image": "sports_images/sarah.webp"
+  }
+];
+
+const flooringContainer = document.getElementById('flooring-types');
+flooringTypes.forEach((type, index) => {
+  flooringContainer.innerHTML += `
+    <div class="flooring-type">
+      <div class="flooring-text">
+        <h3 class="font-serif">${type.name}</h3>
+        <p>${type.description}</p>
+        <h4>Common Applications:</h4>
+        <div>${type.applications.map(app => `<span class="badge">${app}</span>`).join(' ')}</div>
+        <h4>Key Features:</h4>
+        <ul class="checklist">${type.features.map(f => `<li>${f}</li>`).join('')}</ul>
+      </div>
+      <div class="flooring-image">
+        <img src="${type.image}" alt="${type.name}">
+      </div>
+    </div>
+  `;
+});
+
+const sportsList = document.getElementById('sports-list');
+sportTypes.forEach(sport => {
+  sportsList.innerHTML += `<div>${sport}</div>`;
+});
+
+  </script>
+   <!-- fixed contacts -->
+   <div class="vertical-contact-bar">
+    <a href="https://api.whatsapp.com/send?phone=916380655921&text=Hey%20Bao%20Blinds,%20can%20you%20share%20me%20more%20details%20about%20badminton%20court%20flooring%20?" target="_blank" class="whatsapp" aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+916380655921" class="phone" aria-label="Call us">
+      <i class="fa fa-phone"></i>
+    </a>
+    <a href="mailto:info@baoblinds.com" class="email" aria-label="Send Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</body>
+</html>

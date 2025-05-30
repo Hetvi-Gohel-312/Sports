@@ -1,0 +1,177 @@
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: var(--gray-50);
+    padding: 4rem 0;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    color: var(--luxury-navy);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.choose-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.choose-item {
+    background: var(--text-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    padding: 2rem;
+    text-align: justify;
+}
+
+.choose-item h3 {
+    font-size: 1.8rem;
+    color: var(--luxury-navy);
+    margin-bottom: 1rem;
+}
+
+.choose-item p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+}
+
+/* Our Services Section */
+.our-services {
+    background-color: var(--text-light);
+    padding: 4rem 0;
+}
+
+.our-services h2 {
+    font-size: 2.5rem;
+    color: var(--luxury-navy);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-item {
+    background: var(--luxury-light-gold);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    text-align: justify;
+    box-shadow: var(--shadow-md);
+}
+
+.service-item h3 {
+    font-size: 1.7rem;
+    color: var(--luxury-navy);
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+/* FAQ Section */
+.faqs {
+    background-color: var(--gray-50);
+    padding: 4rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faqs h2 {
+    font-size: 2.5rem;
+    color: var(--luxury-navy);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.faq-item {
+    background: var(--text-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.faq-item h3 {
+    font-size: 1.6rem;
+    color: var(--luxury-navy);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    display: none; /* Hidden by default */
+    padding-top: 1rem;
+    line-height: 1.6;
+    max-width: 95%; /* Adjust this percentage to reduce the width */
+    margin: 0 auto; /* Centers the text */
+    transition: all 0.3s ease;
+}
+
+
+/* Show answer when active */
+.faq-item.active p {
+    display: block; /* Reveal the answer when the item is active */
+}
+
+.faq-item.active h3 {
+    color: var(--luxury-gold); /* Highlight question when active */
+}
+
+/* Elegant Arrow Icon */
+.faq-item::before {
+    content: '';
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid var(--luxury-navy);
+    border-width: 0 2px 2px 0;
+    padding: 5px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active (Up arrow) */
+.faq-item.active::before {
+    transform: translateY(-50%) rotate(-135deg); /* Rotate to point upwards */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-item {
+        padding: 1.5rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .faq-item p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-item h3 {
+        font-size: 1.3rem;
+    }
+}
